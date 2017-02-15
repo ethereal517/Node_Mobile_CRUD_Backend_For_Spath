@@ -1,0 +1,22 @@
+{
+  "name": "spath",
+  "version": "1.0.0",
+  "description": "Spath Mobile Backend based on Node/Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smartguy3530/Node_Mobile_CRUD_Backend_For_Spath.git"
+  },
+  "author": "SmartGuy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smartguy3530/Node_Mobile_CRUD_Backend_For_Spath/issues"
+  },
+  "homepage": "https://github.com/smartguy3530/Node_Mobile_CRUD_Backend_For_Spath#readme",
+  "dependencies": {
+    "express": "^4.14.1"
+  }
+}
