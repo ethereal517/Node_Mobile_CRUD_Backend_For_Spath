@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/smartguy3530/Node_Mobile_CRUD_Backend_For_Spath#readme",
   "dependencies": {
+    "body-parser": "^1.16.1",
     "express": "^4.14.1",
     "express-stormpath": "^3.2.0"
   }
