@@ -4,7 +4,15 @@ var express = require('express');
 var app = express();
 var stormpath = require('express-stormpath');
 
-app.get('/notes', function(req, res) {
-    res.json({ notes: "This is your notebook." });
+app.use(stormpath.init(app, {
+    expand: {
+        customData: true,
+    },
+    web: {
+        produces: ['application/json']
+    }
+}));
+app.get('/notes', stormpath.apiAuthenticationRequired, function(req, res) {
+    res.json({notes: req.user.customData.notes || 'This is your notebook'});
 });
 app.listen(3000);
